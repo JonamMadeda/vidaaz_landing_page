@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-const REPO = "https://github.com/JonamMadeda/vidaaz";
+const REPO = "https://github.com/JonamMadeda/viidaaz";
 const RELEASES_URL = `${REPO}/releases`;
 const LATEST_URL = `${REPO}/releases/latest`;
-const TAG_URL = `${REPO}/releases/tag/v2.1`;
-const SETUP_URL = `${REPO}/releases/latest/download/vidaaz-Setup.exe`;
-const PORTABLE_URL = `${REPO}/releases/latest/download/vidaaz.exe`;
+const TAG_URL = `${REPO}/releases/tag/v2.2`;
+const SETUP_URL = `${REPO}/releases/latest/download/viidaaz-Setup.exe`;
+const PORTABLE_URL = `${REPO}/releases/latest/download/viidaaz.exe`;
 const ISSUES_URL = `${REPO}/issues`;
 const LICENSE_URL = `${REPO}/blob/master/LICENSE`;
 
@@ -63,15 +63,15 @@ function Nav() {
     <header className="sticky top-0 z-50 border-b border-edge bg-white/90 shadow-[0_1px_0_rgba(28,25,23,0.04)] backdrop-blur">
       <div className="mx-auto flex h-16 max-w-6xl items-center gap-3 px-5">
         <a href="#top" className="flex items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-ember">
-          <img src="/vidaaz.png" alt="vidaaz icon" className="h-8 w-8 rounded-lg shadow-sm ring-1 ring-edge" />
-          <span className="text-xl font-bold tracking-tight text-ink">vidaaz</span>
+          <img src="/viidaaz.png" alt="viidaaz icon" className="h-8 w-8 rounded-lg shadow-sm ring-1 ring-edge" />
+          <span className="text-xl font-bold tracking-tight text-ink">viidaaz</span>
         </a>
         <a
           href={TAG_URL}
           className="rounded-md bg-field px-2 py-0.5 font-mono text-xs text-dim ring-1 ring-edge transition hover:text-ink hover:ring-ember/50"
-          title="View v2.1 release notes"
+          title="View v2.2 release notes"
         >
-          v2.1
+          v2.2
         </a>
         <nav className="ml-8 hidden items-center gap-6 text-sm font-medium text-dim md:flex" aria-label="Primary">
           <a href="#features" className="rounded transition hover:text-ink focus-visible:outline-2 focus-visible:outline-ember">Features</a>
@@ -148,9 +148,9 @@ function AppMock() {
       >
         {/* title bar */}
         <div className="flex items-center gap-2 border-b border-edge bg-cream px-4 py-2.5">
-          <img src="/vidaaz.png" alt="" className="h-5 w-5 rounded ring-1 ring-edge" />
-          <span className="text-sm font-bold text-ink">vidaaz</span>
-          <span className="ml-auto rounded bg-field px-1.5 py-0.5 font-mono text-[11px] text-dim ring-1 ring-edge">v2.1</span>
+          <img src="/viidaaz.png" alt="" className="h-5 w-5 rounded ring-1 ring-edge" />
+          <span className="text-sm font-bold text-ink">viidaaz</span>
+          <span className="ml-auto rounded bg-field px-1.5 py-0.5 font-mono text-[11px] text-dim ring-1 ring-edge">v2.2</span>
         </div>
         <div className="space-y-3 bg-white p-4">
           {/* command deck */}
@@ -276,7 +276,7 @@ function Hero() {
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-edge bg-white px-3 py-1 text-xs font-medium text-dim shadow-sm">
             <span className="h-2 w-2 rounded-full bg-ember" />
-            v2.1 — free, open source, Windows 10/11
+            v2.2 — free, open source, Windows 10/11
           </div>
           <h1 className="text-balance text-5xl font-extrabold leading-[1.05] tracking-tight text-ink lg:text-6xl">
             YouTube downloads,
@@ -336,7 +336,7 @@ function Features() {
           Everything handled, <span className="text-ember">up front.</span>
         </h2>
         <p className="mt-3 max-w-2xl text-pretty text-dim">
-          Most downloaders fail silently. vidaaz narrates every step and warns
+          Most downloaders fail silently. viidaaz narrates every step and warns
           you early.
         </p>
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -399,7 +399,7 @@ function Requirements() {
           <h3 className="font-bold text-ink">Windows app</h3>
           <p className="mt-1.5 text-sm leading-relaxed text-dim">
             Windows 10 / 11, 64-bit. Installer needs no admin rights. Portable{" "}
-            <a href={PORTABLE_URL} className="font-semibold text-ember-deep underline-offset-2 hover:underline">vidaaz.exe</a>{" "}
+            <a href={PORTABLE_URL} className="font-semibold text-ember-deep underline-offset-2 hover:underline">viidaaz.exe</a>{" "}
             runs anywhere.
           </p>
         </div>
@@ -432,7 +432,7 @@ const FAQS: [string, string][] = [
   ],
   [
     "Why is quality capped around 720p sometimes?",
-    "When the default web client is blocked, vidaaz falls back to mobile clients, which top out near 720p. On an unblocked network you get full quality up to 4K.",
+    "When the default web client is blocked, viidaaz falls back to mobile clients, which top out near 720p. On an unblocked network you get full quality up to 4K.",
   ],
   [
     "Do I need FFmpeg or Python?",
@@ -492,15 +492,15 @@ function CtaBand() {
             className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_80%_at_50%_-20%,rgba(230,126,34,0.35),transparent)]"
           />
           <img
-            src="/vidaaz.png"
-            alt="vidaaz icon"
+            src="/viidaaz.png"
+            alt="viidaaz icon"
             className="relative mx-auto h-16 w-16 rounded-2xl shadow-lg ring-1 ring-white/20"
           />
           <h2 className="relative mx-auto mt-6 max-w-xl text-balance text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
-            Get vidaaz. Download anything (legal) in minutes.
+            Get viidaaz. Download anything (legal) in minutes.
           </h2>
           <p className="relative mx-auto mt-3 max-w-md text-sm text-stone-400">
-            v2.1 • MIT licensed • installer or portable — both update from{" "}
+            v2.2 • MIT licensed • installer or portable — both update from{" "}
             <a href={LATEST_URL} className="underline underline-offset-2 hover:text-white">GitHub</a>
           </p>
           <div className="relative mt-8 flex flex-wrap justify-center gap-3">
@@ -521,10 +521,10 @@ function CtaBand() {
           </div>
           <div className="relative mt-6 flex flex-wrap justify-center gap-x-5 gap-y-1 font-mono text-xs text-stone-500">
             <a href={SETUP_URL} className="inline-flex items-center gap-1 hover:text-stone-300">
-              <Icon d={PATHS.external} className="h-3 w-3" /> vidaaz-Setup.exe
+              <Icon d={PATHS.external} className="h-3 w-3" /> viidaaz-Setup.exe
             </a>
             <a href={PORTABLE_URL} className="inline-flex items-center gap-1 hover:text-stone-300">
-              <Icon d={PATHS.external} className="h-3 w-3" /> vidaaz.exe
+              <Icon d={PATHS.external} className="h-3 w-3" /> viidaaz.exe
             </a>
             <a href={RELEASES_URL} className="inline-flex items-center gap-1 hover:text-stone-300">
               <Icon d={PATHS.external} className="h-3 w-3" /> all releases
@@ -541,9 +541,9 @@ function Footer() {
     <footer className="border-t border-edge bg-white">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-3 px-5 py-8 text-sm text-faint sm:flex-row">
         <div className="flex items-center gap-2">
-          <img src="/vidaaz.png" alt="" className="h-5 w-5 rounded ring-1 ring-edge" />
-          <span className="font-bold text-dim">vidaaz</span>
-          <a href={TAG_URL} className="font-mono text-xs hover:text-dim">v2.1</a>
+          <img src="/viidaaz.png" alt="" className="h-5 w-5 rounded ring-1 ring-edge" />
+          <span className="font-bold text-dim">viidaaz</span>
+          <a href={TAG_URL} className="font-mono text-xs hover:text-dim">v2.2</a>
         </div>
         <span className="sm:ml-4">
           <a href={LICENSE_URL} className="hover:text-dim">MIT licensed</a> • by{" "}
